@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.821b8291.css",
+    "main.js": "/static/js/main.9d9e44f9.js",
+    "static/media/DoorProject.png": "/static/media/DoorProject.0e2d7fea221de04ba8b4.png",
+    "static/media/stopwatch.png": "/static/media/stopwatch.72450cd0d96a592cb18a.png",
+    "static/media/main_image.png": "/static/media/main_image.03d73a94f1949afd63c0.png",
+    "static/media/Visualizer.png": "/static/media/Visualizer.4043d5b09fc3be8e710e.png",
+    "static/media/EmailProject.png": "/static/media/EmailProject.a5597d6b3eb800e0afbd.png",
+    "index.html": "/index.html",
+    "main.821b8291.css.map": "/static/css/main.821b8291.css.map",
+    "main.9d9e44f9.js.map": "/static/js/main.9d9e44f9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.821b8291.css",
+    "static/js/main.9d9e44f9.js"
+  ]
+}
