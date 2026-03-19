@@ -18,9 +18,9 @@ const ProjectsData = [
   name: "EduSpark: Learning & Mentorship Hub",
   category: "Web Application / Education Tech",
   stack: ["ReactJS", "Flask", "MongoDB", "HTML", "CSS", "JavaScript"],
-  live: "https://eduspark.vercel.app/",
+  live: null,
   source: "https://github.com/AmulyaSKumar/EduSpark",
-  description: "Built for RVCE's EduAIthon—connects students to mentors using AI-generated learning roadmaps via GroqAPI. Full-stack platform with real-time messaging, progress tracking, and job matching for 500+ student users.",
+  description: "A collaborative platform connecting students, educators, and startup enthusiasts through mentorship, AI-driven learning roadmaps, and job opportunities.",
   features: [
     "Mentorship matchmaking between students and experts",
     "Personalized learning roadmaps using AI suggestions",
@@ -61,7 +61,7 @@ const ProjectsData = [
   stack: ["Python", "Flask", "HTML", "CSS", "JavaScript", "MongoDB"],
   live: null,  
   source: "https://github.com/AmulyaSKumar/TimeTable_and_Workload_Management",
-  description: "Enterprise solution adopted by RVCE: Automated faculty timetable generation eliminating 40+ hours of manual work per semester. Integrated workload tracking reduces scheduling conflicts for 200+ faculty members.",
+  description: "An automated system designed for educational institutions to generate faculty timetables, provide personalized schedules, and track extra workloads—eliminating manual errors and improving transparency.",
   features: [
     "Automated timetable generation",
     "Personalized schedule access for teachers",
@@ -108,7 +108,7 @@ const ProjectsData = [
   category: "Computer Vision",
   stack: ["Python", "OpenCV", "Flask", "HTML5", "Bootstrap", "SQLite"],
   source: "https://github.com/AmulyaSKumar/Image-Based-Construction-Progress-Analysis",
-  description: "Computer vision system for construction site monitoring. Automates progress tracking using time-series image analysis with SSIM, contour detection, and RANSAC-based alignment—reducing manual inspection time by 40%.",
+  description: "A computer vision-based system to monitor and analyze construction progress using time-series images. Automates image alignment, detects structural changes, computes similarity metrics, and provides visual + quantitative insights via a web dashboard.",
   features: [
     "Image Alignment using ORB, FLANN, RANSAC",
     "Change Detection with SSIM and Contour Analysis",
@@ -155,9 +155,9 @@ const ProjectsData = [
   name: "BuilderStream – Property Owner Dashboard",
   category: "Web Application / Real Estate",
   stack: ["React", "Spring Boot", "MySQL"],
-  live: "https://builderstream.vercel.app/",  
+  live: null,  
   source: "https://github.com/AmulyaSKumar/BuilderStream",
-  description: "Real estate management platform for property owners. Secure authentication, CRUD operations for 50+ simultaneous listings, MySQL-backed inventory, and role-based access control.",
+  description: "A user-friendly dashboard for property owners to manage listings efficiently—providing secure registration, property CRUD operations, and profile management.",
   features: [
     "Owner Registration & Secure Login",
     "Add, View, Update, Delete Property Listings",
@@ -180,9 +180,9 @@ const ProjectsData = [
   name: "City Temperature Lookup & Weather Navigator",
   category: "Web Application / Weather Utility",
   stack: ["React", "Spring Boot", "Java", "JavaScript", "HTML", "CSS"],
-  live: "https://weather-lookup.vercel.app/",
+  live: null,
   source: "https://github.com/AmulyaSKumar/City-Temperature-Lookup",
-  description: "Full-stack weather app with REST API (Spring Boot) backend and React frontend. Enables instant city temperature lookups with direct Google Weather integration.",
+  description: "A seamless React + Spring Boot app that lets users fetch city-wise temperature data (min/max) and navigate directly to Google’s live weather page for detailed forecasts.",
   features: [
     "City selection via dropdown and temperature lookup (min/max)",
     "REST API served by Spring Boot reading from a flat-file data store",

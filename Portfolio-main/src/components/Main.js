@@ -34,26 +34,21 @@ function Main() {
               </div>
             </div>
 
-            {/* Availability Banner */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-[#10B981] to-[#059669] text-white font-medium text-sm">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
-              </span>
-              Available for freelance — March 2026
-            </div>
-
             {/* Description */}
             <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl shadow-sm border border-[#E0E7FF]/40">
               <p className="text-[#1F2937] text-fluid-base font-body leading-relaxed text-balance">
-                I build{' '}
+                I'm a passionate developer with expertise in{' '}
                 <span className="bg-gradient-to-r from-[#4F46E5] to-[#06B6D4] bg-clip-text text-transparent font-semibold">
-                  full-stack web apps for logistics and edtech startups
+                  full-stack applications
                 </span>
-                . Specializing in React, Flask, and AI integrations. 
+                , skilled in SQL, MongoDB, Flask, Spring Boot, and React.
                 <br className="hidden sm:block" />
                 <span className="mt-2 block">
-                  Proven track record: GRL Logistics TMS, EduSpark mentorship platform, and AI-powered tools.
+                  Dedicated to{' '}
+                  <span className="text-[#4F46E5] font-semibold">
+                    transforming ideas into digital solutions
+                  </span>
+                  .
                 </span>
               </p>
             </div>
@@ -110,15 +105,15 @@ function Main() {
             </div>
           </div>
 
-          {/* Reduced/hidden image column */}
-          <div className="hidden lg:flex items-center justify-center">
+          {/* Enhanced image column */}
+          <div className="flex items-center justify-center">
             <div className="relative">
               {/* Image with colored border */}
               <div className="absolute inset-0 rounded-full p-1 bg-gradient-to-br from-[#4F46E5] via-[#06B6D4] to-[#4F46E5] blur-sm animate-pulse-subtle"></div>
               <img 
                 src={myImage} 
                 alt="Amulya - Full Stack Developer" 
-                className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full object-cover border-4 border-white shadow-xl" 
+                className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full object-cover border-4 border-white shadow-xl" 
               />
           
             </div>

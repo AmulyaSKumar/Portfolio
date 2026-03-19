@@ -3,9 +3,9 @@ import React, { useState, useEffect } from 'react';
 const Typewriter = () => {
   const strings = [
     'Full Stack Developer',
-    'React Specialist',
-    'Backend Builder',
-    'AI Integrator',
+    'Developer',
+    'Tech Enthusiast',
+    "Enterprise Architect",
   ];
   const [currentStringIndex, setCurrentStringIndex] = useState(0);
   const [currentString, setCurrentString] = useState('');

@@ -1,5 +1,4 @@
 import Main from './components/Main';
-import FeaturedWork from './components/FeaturedWork';
 import Experiences from './components/Experiences';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
@@ -15,7 +14,6 @@ function App() {
     <div className='font-poppins select-none text-gray-900 bg-white transition duration-500 min-h-screen'>
       <Navbar />
       <Main />
-      <FeaturedWork />
       <About />
       <Experiences />
       <Skills/>

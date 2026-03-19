@@ -4,21 +4,30 @@ import { skillsData } from '../data/skillsData';
 function Skills() {
   const [activeCategory, setActiveCategory] = useState('frontend');
 
-  const SkillTag = ({ skill, index }) => (
-    <div 
-      className="animate-fade-in-up"
-      style={{ animationDelay: `${index * 0.05}s` }}
-    >
-      <span className="inline-flex items-center px-4 py-2.5 rounded-full font-medium text-sm transition-all duration-300 bg-white/80 text-[#4F46E5] border border-[#E0E7FF]/60 hover:bg-gradient-to-r hover:from-[#4F46E5] hover:to-[#06B6D4] hover:text-white hover:border-transparent transform hover:scale-105 cursor-default shadow-sm hover:shadow-md">
-        {skill.name}
-      </span>
+  const SkillBar = ({ skill, index }) => (
+    <div className="glass-effect-strong group rounded-xl p-6 hover:shadow-glow transition-all duration-300 animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
+      <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center">
+            <h4 className="text-lg font-semibold text-white">{skill.name}</h4>
+          </div>
+        <span className="text-[#4F46E5] font-bold text-lg">{skill.level}%</span>
+      </div>
+      
+      <div className="w-full bg-gray-700/30 rounded-full h-3 mb-3 overflow-hidden backdrop-blur-sm border border-gray-600/20">
+        <div 
+          className="bg-gradient-to-r from-[#4F46E5] to-[#06B6D4] h-3 rounded-full transition-all duration-1000 ease-out relative overflow-hidden"
+          style={{ width: `${skill.level}%` }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 animate-shimmer"></div>
+        </div>
+      </div>
     </div>
   );
 
   return (
     <section id="skills" className="py-20 px-6 sm:px-8 lg:px-12 relative overflow-hidden">
       {/* Enhanced Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#F9FAFB] via-[#F3F4F6] to-[#F9FAFB]"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-[#111827] via-[#1E293B] to-[#111827]"></div>
       <div className="absolute top-1/6 left-1/5 w-80 h-80 bg-[#4F46E5]/6 rounded-full blur-3xl animate-pulse-subtle"></div>
       <div className="absolute bottom-1/5 right-1/6 w-72 h-72 bg-[#06B6D4]/4 rounded-full blur-2xl animate-float"></div>
       
@@ -29,12 +38,12 @@ function Skills() {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Enhanced Section Header */}
         <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
             My <span className="text-gradient bg-gradient-to-r from-[#4F46E5] to-[#06B6D4] bg-clip-text text-transparent">Skills</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#4F46E5] to-[#06B6D4] mx-auto rounded-full shadow-lg"></div>
-          <p className="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed mt-6">
-            Technologies and tools I use to build scalable, modern applications
+          <p className="text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed mt-6">
+            A comprehensive overview of my technical expertise and the tools I use to bring ideas to life
           </p>
         </div>
 
@@ -47,7 +56,7 @@ function Skills() {
               className={`group relative px-6 py-3 rounded-xl font-medium transition-all duration-300 flex items-center space-x-2 transform hover:scale-105 ${
                 activeCategory === key
                   ? 'bg-gradient-to-r from-[#4F46E5] to-[#06B6D4] text-white shadow-lg'
-                  : 'bg-white/60 text-gray-700 hover:text-[#4F46E5] border border-gray-200 hover:border-[#4F46E5]/50'
+                  : 'glass-effect text-gray-300 hover:text-white border border-gray-600/20 hover:border-[#4F46E5]/50'
               }`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
@@ -59,10 +68,10 @@ function Skills() {
           ))}
         </div>
 
-        {/* Skills Tag Cloud */}
-        <div className="flex flex-wrap gap-4 justify-center animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+        {/* Enhanced Skills Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
           {skillsData[activeCategory]?.skills.map((skill, index) => (
-            <SkillTag key={skill.name} skill={skill} index={index} />
+            <SkillBar key={skill.name} skill={skill} index={index} />
           ))}
         </div>
       </div>
