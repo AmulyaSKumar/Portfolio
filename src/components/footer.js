@@ -83,10 +83,10 @@ const CodeFooter = () => {
                   className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#4F46E5] transition-colors"
                 >
                   <option value="not-set" className="text-gray-800">Budget Range (optional)</option>
-                  <option value="short-term" className="text-gray-800">Short-term (< $2000)</option>
+                  <option value="short-term" className="text-gray-800">Short-term (&lt; $2000)</option>
                   <option value="small-project" className="text-gray-800">Small Project ($2000 - $5000)</option>
                   <option value="mid-project" className="text-gray-800">Mid-range ($5000 - $15000)</option>
-                  <option value="large-project" className="text-gray-800">Large Project (> $15000)</option>
+                  <option value="large-project" className="text-gray-800">Large Project (&lt; $15000)</option>
                 </select>
                 <textarea
                   name="message"
