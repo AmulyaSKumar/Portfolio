@@ -21,7 +21,7 @@ const CodeFooter = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Create mailto link with form data
-    const mailtoLink = `mailto:amulya.mail.contact@gmail.com?subject=Project Inquiry from ${formData.name}&body=Name: ${formData.name}%0DEmail: ${formData.email}%0DBudget: ${formData.budget}%0D%0DMessage:%0D${formData.message}`;
+    const mailtoLink = `mailto:amulyasshivakumar@gmail.com?subject=Project Inquiry from ${formData.name}&body=Name: ${formData.name}%0DEmail: ${formData.email}%0DBudget: ${formData.budget}%0D%0DMessage:%0D${formData.message}`;
     window.location.href = mailtoLink;
     setFormData({ name: '', email: '', message: '', budget: 'not-set' });
   };
@@ -83,10 +83,10 @@ const CodeFooter = () => {
                   className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#4F46E5] transition-colors"
                 >
                   <option value="not-set" className="text-gray-800">Budget Range (optional)</option>
-                  <option value="short-term" className="text-gray-800">Short-term (&lt; $2000)</option>
-                  <option value="small-project" className="text-gray-800">Small Project ($2000 - $5000)</option>
-                  <option value="mid-project" className="text-gray-800">Mid-range ($5000 - $15000)</option>
-                  <option value="large-project" className="text-gray-800">Large Project (&lt; $15000)</option>
+                  <option value="short-term" className="text-gray-800">Short-term (&lt; 2000INR)</option>
+                  <option value="small-project" className="text-gray-800">Small Project (2000 - 5000INR)</option>
+                  <option value="mid-project" className="text-gray-800">Mid-range (5000 - 15000INR)</option>
+                  <option value="large-project" className="text-gray-800">Large Project (&gt 15000INR)</option>
                 </select>
                 <textarea
                   name="message"
@@ -113,7 +113,7 @@ const CodeFooter = () => {
                 
                 {/* Email */}
                 <a
-                  href="mailto:amulya.mail.contact@gmail.com"
+                  href="mailto:amulyasshivakumar@gmail.com"
                   className="flex items-center gap-4 mb-4 p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors group"
                 >
                   <div className="w-12 h-12 bg-gradient-to-r from-[#4F46E5] to-[#06B6D4] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -121,25 +121,10 @@ const CodeFooter = () => {
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">Email</p>
-                    <p className="text-white font-medium">amulya.mail.contact@gmail.com</p>
+                    <p className="text-white font-medium">amulyasshivakumar@gmail.com</p>
                   </div>
                 </a>
 
-                {/* WhatsApp */}
-                <a
-                  href="https://wa.me/919019596652"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="flex items-center gap-4 mb-4 p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors group"
-                >
-                  <div className="w-12 h-12 bg-gradient-to-r from-[#25D366] to-[#20BA63] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <SiWhatsapp size={24} className="text-white" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-400">WhatsApp</p>
-                    <p className="text-white font-medium">+91 9019596652</p>
-                  </div>
-                </a>
 
                 {/* Social Links */}
                 <div className="mt-6 pt-6 border-t border-white/10">
@@ -169,7 +154,7 @@ const CodeFooter = () => {
 
           {/* Footer Bottom */}
           <div className="mt-12 pt-8 border-t border-white/10 text-center text-gray-400 text-sm">
-            <p>© 2026 Amulya S Kumar. Available for freelance projects — Full Stack Development, AI Integration, System Architecture.</p>
+            <p>Amulya S Kumar. Available for freelance projects — Full Stack Development, AI Integration, System Architecture.</p>
           </div>
         </div>
       </div>
